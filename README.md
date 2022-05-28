@@ -19,7 +19,7 @@ https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/CreatingHostedZone.htm
 Set up an A Record for your domain:
 https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/rrsets-working-with.html
 
-Create AWS credentials which are scoped down to only update the A Record. This is good security practice.
+Create AWS credentials which are scoped down to only update the A Record. This is good security practice. Set up this credential locally on your Windows system.
 
 Update the script with your AWS A Record hostname, AWS Hosted Zone ID and a location for logging.
 
@@ -28,5 +28,6 @@ Either execute the script manually via Powershell, or run as a scheduled task.
 For Scheduled Tasks:
 
 **Program/script**: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+
 **Add arguments**: -command & 'C:\path-to-your-script\dynamicDNS.ps1'
 
